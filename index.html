@@ -2,11 +2,13 @@
 <html>
 <head>
 	<title>Window calculator</title>
-	<meta charset="utf-8">
+	<meta charset="utf-16">
+
+	<link href="css/windows-calculator.css" rel="stylesheet"/>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<script src="js/windows-calculator.js"></script>
 </head>
 <body>
-
-<link href="css/windows-calculator.css" rel="stylesheet" />
 
 <div class="window-calculator">
     <div class="wc-type">
@@ -20,42 +22,64 @@
         <div class="wc-type-definition">
             <div class="wc-type-definition-group">
                 <div class="wc-type-definition-group-name">Одностворчатое:</div>
-                <div class="wc-type-definition-group-element">
-                    <img src="http://lorempixel.com/30/40/">
+                <div class="wc-type-definition-group-element wc-type-definition-group-element-selected" data-type="1ct1">
+                    <img src="img/small/1ct1.jpg">
                 </div>
-                <div class="wc-type-definition-group-element">
-                    <img src="http://lorempixel.com/30/40/">
+                <div class="wc-type-definition-group-element" data-type="1ct2">
+                    <img src="img/small/1ct2.jpg">
                 </div>
-                <div class="wc-type-definition-group-element">
-                    <img src="http://lorempixel.com/30/40/">
+                <div class="wc-type-definition-group-element" data-type="1ct3">
+                    <img src="img/small/1ct3.jpg">
                 </div>
             </div>
             <div class="wc-type-definition-group">
                 <div class="wc-type-definition-group-name">Двухстворчатое:</div>
-                <div class="wc-type-definition-group-element">
-                    <img src="http://lorempixel.com/45/40/">
+                <div class="wc-type-definition-group-element" data-type="2ct1">
+                    <img src="img/small/2ct1.jpg">
                 </div>
-                <div class="wc-type-definition-group-element">
-                    <img src="http://lorempixel.com/45/40/">
+                <div class="wc-type-definition-group-element" data-type="2ct2">
+                    <img src="img/small/2ct2.jpg">
                 </div>
             </div>
             <div class="wc-type-definition-group">
                 <div class="wc-type-definition-group-name">Трёхстворчатое:</div>
-                <div class="wc-type-definition-group-element wc-type-definition-group-element-selected">
-                    <img src="http://lorempixel.com/60/40/">
+                <div class="wc-type-definition-group-element" data-type="3ct1">
+                    <img src="img/small/3ct1.jpg">
                 </div>
-                <div class="wc-type-definition-group-element">
-                    <img src="http://lorempixel.com/60/40/">
+                <div class="wc-type-definition-group-element" data-type="3ct2">
+                    <img src="img/small/3ct2.jpg">
                 </div>
-                <div class="wc-type-definition-group-element">
-                    <img src="http://lorempixel.com/60/40/">
+                <div class="wc-type-definition-group-element" data-type="3ct3">
+                    <img src="img/small/3ct3.jpg">
                 </div>
             </div>
+
+            <div class="wc-type-definition-group">
+                <div class="wc-type-definition-group-name">Четырёхстворчатое:</div>
+                <div class="wc-type-definition-group-element" data-type="4ct1">
+                    <img src="img/small/4ct1.jpg">
+                </div>
+                <div class="wc-type-definition-group-element" data-type="4ct2">
+                    <img src="img/small/4ct2.jpg">
+                </div>
+            </div>
+
+            <div class="wc-type-definition-group">
+                <div class="wc-type-definition-group-name">Дверь балконная:</div>
+                <div class="wc-type-definition-group-element" data-type="db1">
+                    <img src="img/small/db1.jpg">
+                </div>
+                <div class="wc-type-definition-group-element" data-type="db2">
+                    <img src="img/small/db2.jpg">
+                </div>
+            </div>
+
+            <div class="wc-selected-carriage"></div>
         </div>
     </div>
     <div class="wc-parameters">
         <div class="wc-window">
-            <img class="wc-window-image" src="http://lorempixel.com/310/310"/>
+            <img class="wc-window-image" src="img/big/b1ct1.jpg"/>
             
             <div class="vertical-line vertical-line-main"></div>
             <div class="horizantal-line vertical-line-bottom"></div>
@@ -82,8 +106,11 @@
                 Выберите профиль:
             </span>
             
-            <select class="wc-select">
-                <option value="KBE-expert">КВЕ Эксперт</option>
+            <select class="wc-select wc-producer">
+                <option value="KBE">КВЕ Эксперт</option>
+                <option value="DEXEN">DEXEN</option>
+                <option value="WDS">WDS</option>
+                <option value="SALAMANDER">Salamander Streamline</option>
             </select>
 
             <div class="wc-step-number">
@@ -99,10 +126,10 @@
 
             <button class="wc-button-calculate">Рассчитать</button>
 
-            <fieldset class="wc-money-price-fieldset">
+            <fieldset class="wc-money-price-fieldset wc-hidden">
                 <legend class="wc-money-price-legend">Стоимость окна</legend>
 
-                <span class="wc-money-price">2 980 000</span><span class="wc-money-price-rubles"> бел. руб.</span>
+                <span class="wc-money-price"></span><span class="wc-money-price-rubles"> бел. руб.</span>
             </fieldset>
         </div>
     </div>
