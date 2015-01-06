@@ -1,0 +1,233 @@
+﻿.window-calculator {
+    width: 750px;
+    height: 500px;
+}
+
+    .window-calculator .wc-type {
+        margin: 0 0 20px 0;
+    }
+
+    .window-calculator .wc-step-number {
+        background: rgb(1, 73, 123);
+        width: 35px;
+        height: 35px;
+        border-radius: 20px;
+        display: inline-block;
+        color: rgb(255, 255, 255);
+        font-size: 30px;
+        text-align: center;
+        vertical-align: sub;
+        margin: 10px;
+    }
+
+    .window-calculator .wc-step-definition {
+        color: rgb(1, 73, 123);
+        font-style: italic;
+        font-size: 20px;
+    }
+
+    .window-calculator .wc-type-definition-group {
+        display: inline-block;
+        min-width: 180px;
+        min-height: 90px;
+    }
+
+    .window-calculator .wc-type-definition-group-name {
+        color: rgb(128, 128, 128);
+        font-style: italic;
+        font-size: 15px;
+        margin: 10px 5px;
+    }
+
+    .window-calculator .wc-type-definition-group-element {
+        display: inline-block;
+        padding: 5px 5px;
+    }
+
+    .window-calculator .wc-type-definition-group-element-selected {
+        box-shadow: inset 0px 0px 10px 0px rgba(128,128,128,.5);
+        border: 1px rgba(128, 128, 128, .5) solid;
+        border-radius: 7px;
+    }
+
+    .window-calculator .wc-window {
+        height: 380px;
+        width: 400px;
+        /* background: rgba(128, 128, 128, .5); */
+        display: inline-block;
+        position: relative;
+    }
+
+    .window-calculator .wc-window-image {
+        display: block;
+        margin: 30px;
+    }
+
+    .window-calculator .wc-price {
+        height: 380px;
+        width: 320px;
+        /* background: rgba(128, 128, 128, .2); */
+        display: inline-block;
+        vertical-align: top;
+    }
+
+    .window-calculator .vertical-line {
+        border-left: 2px solid rgb(1, 73, 123);
+        position: absolute;
+        width: 2px;
+    }
+
+    .window-calculator .horizantal-line {
+        border-top: 2px solid rgb(1, 73, 123);
+        position: absolute;
+        height: 2px;
+    }
+
+    .window-calculator .vertical-line-main {
+        height: 310px;
+        top: 30px;
+        right: 25px;
+    }
+
+    .window-calculator .vertical-line-top {
+        top: 30px;
+        right: 23px;
+        width: 10px;
+    }
+
+    .window-calculator .vertical-line-bottom {
+        top: 340px;
+        right: 23px;
+        width: 10px;
+    }
+
+    .window-calculator .horizantal-line-main {
+        bottom: 10px;
+        width: 310px;
+        left: 30px;
+    }
+
+    .window-calculator .horizantal-line-left {
+        left: 30px;
+        height: 10px;
+        bottom: 8px;
+    }
+
+    .window-calculator .horizantal-line-right {
+        left: 340px;
+        height: 10px;
+        bottom: 8px;
+    }
+
+    .window-calculator .wc-width-block {
+        position: absolute;
+        bottom: 2px;
+        left: 148px;
+        width: 53px;
+        background: rgb(255, 255, 255);
+        border: 2px rgb(1, 73, 123) solid;
+        font-size: 12px;
+        padding: 2px 1px;
+    }
+
+    .window-calculator .wc-height-block {
+        position: absolute;
+        top: 170px;
+        right: 0;
+        width: 53px;
+        background: rgb(255, 255, 255);
+        border: 2px rgb(1, 73, 123) solid;
+        font-size: 12px;
+        padding: 2px 1px;
+    }
+
+    .window-calculator .wc-width-block-value,
+    .window-calculator .wc-height-block-value {
+        width: 33px;
+        border: 0px;
+        font-size: 12px;
+    }
+
+    .window-calculator .wc-select {
+        display: block;
+        padding: 3px 10px;
+        border-radius: 4px;
+        min-width: 250px;
+        margin: 10px 0 20px 35px;
+        color: rgb(90, 90, 90);
+    }
+
+.wc-button-calculate {
+    -moz-box-shadow: inset 0px 1px 0px 0px #caefab;
+    -webkit-box-shadow: inset 0px 1px 0px 0px #caefab;
+    box-shadow: inset 0px 1px 0px 0px #caefab;
+    background: -webkit-gradient( linear, left top, left bottom, color-stop(0.05, #77d42a), color-stop(1, #5cb811) );
+    background: -moz-linear-gradient( center top, #77d42a 5%, #5cb811 100% );
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#77d42a', endColorstr='#5cb811');
+    background-color: #77d42a;
+    -webkit-border-top-left-radius: 8px;
+    -moz-border-radius-topleft: 8px;
+    border-top-left-radius: 8px;
+    -webkit-border-top-right-radius: 8px;
+    -moz-border-radius-topright: 8px;
+    border-top-right-radius: 8px;
+    -webkit-border-bottom-right-radius: 8px;
+    -moz-border-radius-bottomright: 8px;
+    border-bottom-right-radius: 8px;
+    -webkit-border-bottom-left-radius: 8px;
+    -moz-border-radius-bottomleft: 8px;
+    border-bottom-left-radius: 8px;
+    text-indent: -1px;
+    border: 2px solid #268a16;
+    display: inline-block;
+    color: #306108;
+    font-family: Arial;
+    font-size: 19px;
+    font-weight: bold;
+    font-style: normal;
+    height: 40px;
+    line-height: 40px;
+    width: 179px;
+    text-decoration: none;
+    text-align: center;
+    text-shadow: 1px 1px 0px #aade7c;
+    margin: 35px auto 20px;
+    display: block;
+    padding: 0px 0px;
+}
+
+    .wc-button-calculate:hover {
+        background: -webkit-gradient( linear, left top, left bottom, color-stop(0.05, #5cb811), color-stop(1, #77d42a) );
+        background: -moz-linear-gradient( center top, #5cb811 5%, #77d42a 100% );
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#5cb811', endColorstr='#77d42a');
+        background-color: #5cb811;
+    }
+
+    .wc-button-calculate:active {
+        position: relative;
+        top: 1px;
+    }
+
+
+.window-calculator .wc-money-price-fieldset {
+    margin: 30px;
+    border: 2px rgb(181, 3, 3) solid;
+    color: rgb(181, 3, 3);
+    font-style: italic;
+    font-size: 17px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.window-calculator .wc-money-price-legend {
+    text-align: left;
+}
+
+.window-calculator .wc-money-price {
+    font-size: 31px;
+    font-style: normal;
+}
+
+.window-calculator .wc-money-price-rubles {
+    font-size: 15px;
+}

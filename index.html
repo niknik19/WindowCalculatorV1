@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Window calculator</title>
+	<meta charset="utf-8">
+</head>
+<body>
+
+<link href="css/windows-calculator.css" rel="stylesheet" />
+
+<div class="window-calculator">
+    <div class="wc-type">
+        <div class="wc-step-number">
+            1
+        </div>
+        <span class="wc-step-definition">
+            Выберите тип окна:
+        </span>
+        
+        <div class="wc-type-definition">
+            <div class="wc-type-definition-group">
+                <div class="wc-type-definition-group-name">Одностворчатое:</div>
+                <div class="wc-type-definition-group-element">
+                    <img src="http://lorempixel.com/30/40/">
+                </div>
+                <div class="wc-type-definition-group-element">
+                    <img src="http://lorempixel.com/30/40/">
+                </div>
+                <div class="wc-type-definition-group-element">
+                    <img src="http://lorempixel.com/30/40/">
+                </div>
+            </div>
+            <div class="wc-type-definition-group">
+                <div class="wc-type-definition-group-name">Двухстворчатое:</div>
+                <div class="wc-type-definition-group-element">
+                    <img src="http://lorempixel.com/45/40/">
+                </div>
+                <div class="wc-type-definition-group-element">
+                    <img src="http://lorempixel.com/45/40/">
+                </div>
+            </div>
+            <div class="wc-type-definition-group">
+                <div class="wc-type-definition-group-name">Трёхстворчатое:</div>
+                <div class="wc-type-definition-group-element wc-type-definition-group-element-selected">
+                    <img src="http://lorempixel.com/60/40/">
+                </div>
+                <div class="wc-type-definition-group-element">
+                    <img src="http://lorempixel.com/60/40/">
+                </div>
+                <div class="wc-type-definition-group-element">
+                    <img src="http://lorempixel.com/60/40/">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="wc-parameters">
+        <div class="wc-window">
+            <img class="wc-window-image" src="http://lorempixel.com/310/310"/>
+            
+            <div class="vertical-line vertical-line-main"></div>
+            <div class="horizantal-line vertical-line-bottom"></div>
+            <div class="horizantal-line vertical-line-top"></div>
+
+            <div class="horizantal-line horizantal-line-main"></div>
+            <div class="vertical-line horizantal-line-left"></div>
+            <div class="vertical-line horizantal-line-right"></div>
+
+            <div class="wc-height-block">
+                <input class="wc-height-block-value" value="1500"/>,мм
+            </div>
+
+            <div class="wc-width-block">
+                <input class="wc-width-block-value" value="1500"/>,мм
+            </div>
+
+        </div>
+        <div class="wc-price">
+            <div class="wc-step-number">
+                2
+            </div>
+            <span class="wc-step-definition">
+                Выберите профиль:
+            </span>
+            
+            <select class="wc-select">
+                <option value="KBE-expert">КВЕ Эксперт</option>
+            </select>
+
+            <div class="wc-step-number">
+                3
+            </div>
+            <span class="wc-step-definition">
+                Выберите стеклопакет:
+            </span>
+
+            <select class="wc-select">
+                <option value="2cam3glass">Двухкамерный (3 стекла)</option>
+            </select>
+
+            <button class="wc-button-calculate">Рассчитать</button>
+
+            <fieldset class="wc-money-price-fieldset">
+                <legend class="wc-money-price-legend">Стоимость окна</legend>
+
+                <span class="wc-money-price">2 980 000</span><span class="wc-money-price-rubles"> бел. руб.</span>
+            </fieldset>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
