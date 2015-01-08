@@ -45,6 +45,10 @@
         padding: 5px 5px;
     }
 
+    .window-calculator .wc-type-definition-group-element img {
+        box-shadow: 2px 2px 2px -1px rgb(0,0,0);
+    }
+
     .window-calculator .wc-type-definition {
         position: relative;
     }
@@ -99,18 +103,18 @@
     .window-calculator .vertical-line-main {
         height: 310px;
         top: 20px;
-        right: 25px;
+        right: 28px;
     }
 
     .window-calculator .vertical-line-top {
         top: 20px;
-        right: 23px;
+        right: 26px;
         width: 10px;
     }
 
     .window-calculator .vertical-line-bottom {
         top: 330px;
-        right: 23px;
+        right: 26px;
         width: 10px;
     }
 
@@ -135,11 +139,11 @@
     .window-calculator .wc-width-block {
         position: absolute;
         bottom: 2px;
-        left: 165px;
-        width: 53px;
+        left: 160px;
+        width: 65px;
         background: rgb(255, 255, 255);
         border: 2px rgb(1, 73, 123) solid;
-        font-size: 11px;
+        font-size: 12px;
         padding: 2px 1px;
         font-family: Verdana, Geneva, sans-serif;
     }
@@ -148,19 +152,19 @@
         position: absolute;
         top: 160px;
         right: 0;
-        width: 53px;
+        width: 65px;
         background: rgb(255, 255, 255);
         border: 2px rgb(1, 73, 123) solid;
-        font-size: 11px;
+        font-size: 12px;
         padding: 2px 1px;
         font-family: Verdana, Geneva, sans-serif;
     }
 
     .window-calculator .wc-width-block-value,
     .window-calculator .wc-height-block-value {
-        width: 33px;
+        width: 40px;
         border: 0px;
-        font-size: 12px;
+        font-size: 15px;
         font-weight: bold;
     }
 
@@ -171,8 +175,24 @@
         min-width: 250px;
         margin: 10px 0px 20px 55px;
         color: rgb(90, 90, 90);
+
+        /* Mozilla sucks, so some styles to corrent */
+        -webkit-border-radius:4px;
+        -moz-border-radius:4px;
+        border-radius:4px;
+        -webkit-box-shadow: 0 3px 0 #ccc, 0 -1px #fff inset;
+        -moz-box-shadow: 0 3px 0 #ccc, 0 -1px #fff inset;
+        box-shadow: 0 3px 0 #ccc, 0 -1px #fff inset;
+        border: 1px solid rgb(90, 90, 90);
+        outline:none;
+        display: inline-block;
+        /*-webkit-appearance:none;*/
+        -moz-appearance:none;
+        appearance:none;
+        cursor:pointer;
     }
 
+/* Auto generated button layout */
 .wc-button-calculate {
     -moz-box-shadow: inset 0px 1px 0px 0px #caefab;
     -webkit-box-shadow: inset 0px 1px 0px 0px #caefab;
@@ -243,6 +263,7 @@
 
 .window-calculator .wc-money-price-legend {
     text-align: left;
+    color: rgb(181, 3, 3)
 }
 
 .window-calculator .wc-money-price {
