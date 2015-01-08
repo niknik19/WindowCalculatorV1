@@ -45,12 +45,6 @@
         padding: 5px 5px;
     }
 
-    /*.window-calculator .wc-type-definition-group-element-selected {
-        box-shadow: inset 0px 0px 10px 0px rgba(128,128,128,.5);
-        border: 1px rgba(128, 128, 128, .5) solid;
-        border-radius: 7px;
-    }*/
-
     .window-calculator .wc-type-definition {
         position: relative;
     }
@@ -63,10 +57,10 @@
         top: 36px;
         width: 39px;
 
-         -webkit-transition: left .4s ease-out, height .4s ease-out, width .4s ease-out;
-         -moz-transition: left .4s ease-out, height .4s ease-out, width .4s ease-out;
-         -o-transition: left .4s ease-out, height .4s ease-out, width .4s ease-out;
-         transition: left .4s ease-out, height .4s ease-out, width .4s ease-out;
+        -webkit-transition: left .4s ease-out, height .4s ease-out, width .4s ease-out;
+        -moz-transition: left .4s ease-out, height .4s ease-out, width .4s ease-out;
+        -o-transition: left .4s ease-out, height .4s ease-out, width .4s ease-out;
+        transition: left .4s ease-out, height .4s ease-out, width .4s ease-out;
 
          height: 50px;
          left: 0px;
@@ -75,7 +69,6 @@
     .window-calculator .wc-window {
         height: 383px;
         width: 445px;
-        /* background: rgba(128, 128, 128, .5); */
         display: inline-block;
         position: relative;
     }
@@ -87,7 +80,6 @@
     .window-calculator .wc-price {
         height: 380px;
         width: 320px;
-        /* background: rgba(128, 128, 128, .2); */
         display: inline-block;
         vertical-align: top;
     }
@@ -147,8 +139,9 @@
         width: 53px;
         background: rgb(255, 255, 255);
         border: 2px rgb(1, 73, 123) solid;
-        font-size: 12px;
+        font-size: 11px;
         padding: 2px 1px;
+        font-family: Verdana, Geneva, sans-serif;
     }
 
     .window-calculator .wc-height-block {
@@ -158,8 +151,9 @@
         width: 53px;
         background: rgb(255, 255, 255);
         border: 2px rgb(1, 73, 123) solid;
-        font-size: 12px;
+        font-size: 11px;
         padding: 2px 1px;
+        font-family: Verdana, Geneva, sans-serif;
     }
 
     .window-calculator .wc-width-block-value,
@@ -167,6 +161,7 @@
         width: 33px;
         border: 0px;
         font-size: 12px;
+        font-weight: bold;
     }
 
     .window-calculator .wc-select {
@@ -174,7 +169,7 @@
         padding: 3px 10px;
         border-radius: 4px;
         min-width: 250px;
-        margin: 10px 0 20px 35px;
+        margin: 10px 0px 20px 55px;
         color: rgb(90, 90, 90);
     }
 
