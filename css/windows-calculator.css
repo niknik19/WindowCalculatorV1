@@ -207,7 +207,7 @@
     text-decoration: none;
     text-align: center;
     text-shadow: 1px 1px 0px #aade7c;
-    margin: 35px auto 20px;
+    margin: 35px 20px 20px 90px;
     display: block;
     padding: 0px 0px;
 }
@@ -227,13 +227,18 @@
 
 
 .window-calculator .wc-money-price-fieldset {
-    margin: 30px;
+    margin: 30px 0px 0 50px;
     border: 2px rgb(181, 3, 3) solid;
     color: rgb(181, 3, 3);
     font-style: italic;
     font-size: 17px;
     font-weight: bold;
     text-align: center;
+
+    -webkit-transition: opacity .4s ease-out;
+    -moz-transition: opacity .4s ease-out;
+    -o-transition: opacity .4s ease-out;
+    transition: opacity .4s ease-out;
 }
 
 .window-calculator .wc-money-price-legend {
@@ -250,5 +255,19 @@
 }
 
 .window-calculator .wc-hidden {
-    display: none;
+    display: none !important;
+}
+
+.window-calculator .wc-zero-opacity {
+    opacity: 0;
+}
+
+.window-calculator .wc-money-price-spinner {
+    display: block;
+    margin: -60px 0 0 150px;
+
+    -webkit-transition: opacity .4s ease-out;
+    -moz-transition: opacity .4s ease-out;
+    -o-transition: opacity .4s ease-out;
+    transition: opacity .4s ease-out;
 }

@@ -62,9 +62,9 @@
         if (price > 1000000000){
             showError();
             return;
-        } else {
-            showPrice(price);
-        }
+        } 
+
+        showPrice(price);
     });
 
     function showError() {
@@ -74,8 +74,15 @@
     }
 
     function showPrice(price) {
-        $('.wc-money-price-fieldset').removeClass('wc-hidden');
-        $('.wc-money-price-rubles').removeClass('wc-hidden');
-        $('.wc-money-price').text(price.toString().split(/(?=(?:...)*$)/).join(' '));
-    }
+    	$('.wc-money-price-spinner').removeClass('wc-hidden');
+    	$('.wc-money-price-fieldset').addClass('wc-zero-opacity');
+
+    	setTimeout(function() {
+			$('.wc-money-price-spinner').addClass('wc-hidden');
+    		$('.wc-money-price-fieldset').removeClass('wc-zero-opacity');
+
+        	$('.wc-money-price-rubles').removeClass('wc-hidden');
+        	$('.wc-money-price').text(price.toString().split(/(?=(?:...)*$)/).join(' '));
+    	}, 500);
+	}
 });
