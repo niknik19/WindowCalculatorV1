@@ -4,7 +4,8 @@
         if ($this.hasClass('wc-type-definition-group-element-selected'))
             return;
 
-        $('.wc-window-image').attr('src', 'img/big/b' + $this.data('type') + '.jpg');
+        var bigImagePattern = '/wcalc/img/big/b';
+        $('.wc-window-image').attr('src', bigImagePattern + $this.data('type') + '.jpg');
 
         $('.wc-type-definition-group-element-selected').removeClass('wc-type-definition-group-element-selected');
         $this.addClass('wc-type-definition-group-element-selected');
@@ -85,4 +86,11 @@
         	$('.wc-money-price').text(price.toString().split(/(?=(?:...)*$)/).join(' '));
     	}, 500);
 	}
+
+    //Joomla denied my html tag .wc-money-price, so let's create it , if it not exists
+    if(! $('.wc-money-price').length) {
+        var wcMoneyPrice = $('<span/>').addClass('wc-money-price');
+            
+        $('.wc-money-price-legend').after(wcMoneyPrice);
+    }
 });

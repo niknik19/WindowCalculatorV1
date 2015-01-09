@@ -1,6 +1,13 @@
 ﻿.window-calculator {
     width: 820px;
-    height: 500px;
+    height: 570px;
+    line-height: normal;
+    font-size: 4px;
+    font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+}
+
+.window-calculator {
+
 }
 
     .window-calculator .wc-type {
@@ -46,6 +53,7 @@
     }
 
     .window-calculator .wc-type-definition-group-element img {
+        margin: 0;
         box-shadow: 1px 1px 1px 0px rgb(146, 146, 176);
     }
 
@@ -173,6 +181,7 @@
         border: 0px;
         font-size: 15px;
         font-weight: bold;
+        border-radius: 4px;
     }
 
     .window-calculator .wc-select {
