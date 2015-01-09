@@ -151,6 +151,7 @@
         font-size: 12px;
         padding: 2px 1px;
         font-family: Verdana, Geneva, sans-serif;
+        border-radius: 7px;
     }
 
     .window-calculator .wc-height-block {
@@ -163,6 +164,7 @@
         font-size: 12px;
         padding: 2px 1px;
         font-family: Verdana, Geneva, sans-serif;
+        border-radius: 7px;
     }
 
     .window-calculator .wc-width-block-value,
