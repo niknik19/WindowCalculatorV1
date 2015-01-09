@@ -4,7 +4,7 @@
         if ($this.hasClass('wc-type-definition-group-element-selected'))
             return;
 
-        var bigImagePattern = '/wcalc/img/big/b';
+        var bigImagePattern = 'wcalc/img/big/b';
         $('.wc-window-image').attr('src', bigImagePattern + $this.data('type') + '.jpg');
 
         $('.wc-type-definition-group-element-selected').removeClass('wc-type-definition-group-element-selected');
