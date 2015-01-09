@@ -46,7 +46,7 @@
     }
 
     .window-calculator .wc-type-definition-group-element img {
-        box-shadow: 1px 1px 1px 0px blue;
+        box-shadow: 1px 1px 1px 0px rgb(146, 146, 176);
     }
 
     .window-calculator .wc-type-definition-group-element img:hover {
