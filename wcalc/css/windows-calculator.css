@@ -67,7 +67,7 @@
 
     .window-calculator .wc-selected-carriage {
         box-shadow: inset 0px 0px 20px 0px rgba(192, 192, 192, 0.8);
-        border: 1px rgb(192, 192, 192) solid;
+        border: 1px rgb(128, 128, 128) solid;
         border-radius: 5px;
         position: absolute;
         top: 36px;
@@ -313,8 +313,8 @@
 .window-calculator .wc-arrow-to-height {
     position: absolute;
     top: 190px;
-    right: -98px;
-    z-index: -1;
+    right: -82px;
+    width: 108px;
 }
 
 .window-calculator .wc-arrow-to-width {
